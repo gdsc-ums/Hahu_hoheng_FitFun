@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hahu_hoheng_fitfun/bindings/home_binding.dart';
-import 'package:hahu_hoheng_fitfun/routes/route_name.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_theme.dart';
 import 'package:hahu_hoheng_fitfun/views/home.dart';
 
