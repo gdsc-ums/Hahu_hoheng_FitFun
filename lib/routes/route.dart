@@ -7,8 +7,9 @@ import 'route_name.dart';
 class AppPage {
   static final pages = [
     GetPage(
-        name: RouteName.home,
-        page: () => const HomeView(),
-        binding: HomeBinding()),
+      name: RouteName.home,
+      page: () => const HomeView(),
+      binding: HomeBinding(),
+    ),
   ];
 }
