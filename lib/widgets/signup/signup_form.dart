@@ -1,19 +1,43 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:hahu_hoheng_fitfun/controllers/login_controller.dart';
-import 'package:hahu_hoheng_fitfun/themes/app_color.dart';
-import 'package:hahu_hoheng_fitfun/themes/app_font.dart';
+import 'package:hahu_hoheng_fitfun/controllers/signup_controller.dart';
 
-class LoginForm extends StatelessWidget {
-  const LoginForm({super.key});
+import '../../themes/app_color.dart';
+import '../../themes/app_font.dart';
+
+class SignupForm extends StatelessWidget {
+  const SignupForm({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.find<LoginController>();
+    final controller = Get.find<SignupController>();
     return Column(
       children: [
-        GetBuilder<LoginController>(
+        GetBuilder<SignupController>(
+            builder: (_) => TextField(
+                  controller: controller.name,
+                  style: text14,
+                  focusNode: controller.nameNode,
+                  decoration: InputDecoration(
+                      hintText: "Masukkan nama lengkap anda",
+                      prefixIcon: Padding(
+                        padding: const EdgeInsets.all(15),
+                        child: SvgPicture.asset(
+                          "assets/svg/person.svg",
+                          fit: BoxFit.cover,
+                          colorFilter: ColorFilter.mode(
+                              controller.nameNode.hasFocus
+                                  ? Colors.black
+                                  : const Color(0xFFA0A8B0),
+                              BlendMode.srcIn),
+                        ),
+                      )),
+                )),
+        const SizedBox(
+          height: 20,
+        ),
+        GetBuilder<SignupController>(
             builder: (_) => TextField(
                   controller: controller.email,
                   style: text14,
@@ -36,7 +60,7 @@ class LoginForm extends StatelessWidget {
         const SizedBox(
           height: 20,
         ),
-        GetBuilder<LoginController>(
+        GetBuilder<SignupController>(
           builder: (_) => TextField(
             style: text14,
             controller: controller.pass,
@@ -81,22 +105,38 @@ class LoginForm extends StatelessWidget {
         const SizedBox(
           height: 10,
         ),
-        Align(
-          alignment: Alignment.centerRight,
-          child: Text(
-            "Lupa Password?",
-            style: text12.copyWith(color: secondaryColor),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 30),
+          child: RichText(
+            text: TextSpan(
+                style: text12.copyWith(color: const Color(0xFF717784)),
+                children: const [
+                  TextSpan(
+                    text: "By continuing you accept our",
+                  ),
+                  TextSpan(
+                    text: " Privacy Policy ",
+                    style: TextStyle(color: secondaryColor),
+                  ),
+                  TextSpan(
+                    text: " and The",
+                  ),
+                  TextSpan(
+                    text: " terms of Use",
+                    style: TextStyle(color: secondaryColor),
+                  ),
+                ]),
           ),
         ),
         const SizedBox(
-          height: 15,
+          height: 20,
         ),
         SizedBox(
           width: Get.width,
           child: ElevatedButton(
               onPressed: () {},
               child: Text(
-                "Login",
+                "Sign Up",
                 style: buttonText,
               )),
         )

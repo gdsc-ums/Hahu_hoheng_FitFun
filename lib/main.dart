@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       getPages: AppPage.pages,
       initialBinding: LoginBinding(),
-      home: const SplashView(),
+      home: const LoginView(),
     );
   }
 }
