@@ -1,6 +1,5 @@
-// ignore_for_file: constant_identifier_names
-
 abstract class RouteName {
-   static const home = "/home";
-   static const login = "/login";
+  static const home = "/home";
+  static const login = "/login";
+  static const splash = "/splash";
 }
