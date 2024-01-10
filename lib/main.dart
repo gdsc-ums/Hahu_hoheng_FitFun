@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hahu_hoheng_fitfun/firebase_options.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_theme.dart';
-import 'package:hahu_hoheng_fitfun/views/home.dart';
+import 'package:hahu_hoheng_fitfun/views/splash.dart';
 
 import 'routes/route.dart';
 
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       title: 'FitFun',
       theme: AppTheme.lightTheme,
       getPages: AppPage.pages,
-      home: const HomeView(),
+      home: const SplashView(),
     );
   }
 }
