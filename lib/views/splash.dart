@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:hahu_hoheng_fitfun/themes/app_font.dart';
 
 class SplashView extends StatelessWidget {
   const SplashView({super.key});
@@ -21,7 +22,22 @@ class SplashView extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          const Text('FitFUn'),
+          RichText(
+            text: TextSpan(
+              children: [
+                TextSpan(
+                    text: "Fit",
+                    style: text30.copyWith(
+                      color: const Color(0xFF363636),
+                    )),
+                TextSpan(
+                    text: "fun",
+                    style: text30.copyWith(
+                      color: const Color(0xFF3CB371),
+                    )),
+              ],
+            ),
+          ),
         ],
       ),
     );
