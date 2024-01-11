@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-const baseText = TextStyle(
-  color: Colors.black,
-);
+const baseText = TextStyle(color: Colors.black, fontFamily: "Roboto");
+final TextStyle buttonText =
+    baseText.copyWith(color: Colors.white, fontSize: 16);
 final TextStyle text9 = baseText.copyWith(fontSize: 9);
 final TextStyle text10 = baseText.copyWith(fontSize: 10);
 final TextStyle text11 = baseText.copyWith(fontSize: 11);

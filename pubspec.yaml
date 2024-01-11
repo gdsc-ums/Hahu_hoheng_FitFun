@@ -33,8 +33,8 @@ dependencies:
   firebase_core: ^2.24.2
   flutter:
     sdk: flutter
-  get: ^4.6.6
   flutter_svg: ^2.0.9
+  get: ^4.6.6
 
 dev_dependencies:
 
@@ -58,6 +58,8 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/svg/
+    - assets/images/
     - assets/images/logo/logo_produk.svg
     - assets/icons/
     - assets/images/
@@ -72,12 +74,37 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Thin.ttf
+          weight: 100
+        - asset: fonts/Roboto-ThinItalic.ttf
+          weight: 100
+          style: italic
+        - asset: fonts/Roboto-Light.ttf
+          weight: 300
+        - asset: fonts/Roboto-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: fonts/Roboto-Regular.ttf
+          weight: 400
+        - asset: fonts/Roboto-Medium.ttf
+          weight: 500
+        - asset: fonts/Roboto-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: fonts/Roboto-Bold.ttf
+          weight: 700
+        - asset: fonts/Roboto-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: fonts/Roboto-Black.ttf
+          weight: 900
+        - asset: fonts/Roboto-BlackItalic.ttf
+          weight: 900
+          style: italic
+
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
