@@ -50,6 +50,16 @@ class AppTheme {
             fillColor: Colors.white,
             helperStyle: text10.copyWith(
                 color: Colors.red, overflow: TextOverflow.visible),
+            focusedErrorBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+                borderSide:
+                    const BorderSide(width: 0.5, color: Colors.redAccent)),
+            errorStyle: text10.copyWith(
+                color: Colors.redAccent, overflow: TextOverflow.visible),
+            errorBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+                borderSide:
+                    const BorderSide(width: 0.5, color: Colors.redAccent)),
             contentPadding:
                 const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
             enabledBorder: OutlineInputBorder(

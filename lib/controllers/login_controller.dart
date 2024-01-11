@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:hahu_hoheng_fitfun/services/auth_service.dart';
 
 class LoginController extends GetxController {
+  final _auth = AuthService();
   late final TextEditingController email;
   late final TextEditingController pass;
   late final FocusNode emailNode;
   late final FocusNode passNode;
+  RxBool isEmailInvalid = false.obs;
+  RxBool isPassInvalid = false.obs;
   RxBool isEmailFocus = false.obs;
   RxBool isPassFocus = false.obs;
   RxBool isVisible = false.obs;
@@ -33,6 +37,13 @@ class LoginController extends GetxController {
     emailNode.dispose();
     passNode.dispose();
     super.dispose();
+  }
+
+  Future<void> login() async {
+    await _auth.singInWithEmailAndPassword(email.text.trim(), pass.text.trim());
+    email.clear();
+    pass.clear();
+    update();
   }
 
   void focus() {
