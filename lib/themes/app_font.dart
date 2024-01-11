@@ -36,3 +36,5 @@ final TextStyle text29 =
     baseText.copyWith(fontSize: 29, fontWeight: FontWeight.w600);
 final TextStyle text30 =
     baseText.copyWith(fontSize: 30, fontWeight: FontWeight.w600);
+final TextStyle text45 =
+    baseText.copyWith(fontSize: 45, fontWeight: FontWeight.w800);

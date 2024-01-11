@@ -1,9 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_font.dart';
 
-class SplashView extends StatelessWidget {
+import '../routes/route_name.dart';
+
+class SplashView extends StatefulWidget {
   const SplashView({super.key});
+
+  @override
+  State<SplashView> createState() => _SplashViewState();
+}
+
+class _SplashViewState extends State<SplashView> {
+  @override
+  void initState() {
+    Future.delayed(const Duration(seconds: 5), () {
+      Get.toNamed(RouteName.quiz);
+    });
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -27,12 +43,12 @@ class SplashView extends StatelessWidget {
               children: [
                 TextSpan(
                     text: "Fit",
-                    style: text30.copyWith(
+                    style: text45.copyWith(
                       color: const Color(0xFF363636),
                     )),
                 TextSpan(
                     text: "fun",
-                    style: text30.copyWith(
+                    style: text45.copyWith(
                       color: const Color(0xFF3CB371),
                     )),
               ],

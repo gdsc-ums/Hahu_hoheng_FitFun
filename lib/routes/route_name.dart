@@ -3,4 +3,6 @@
 abstract class RouteName {
   static const home = "/home";
   static const splash = "/splash";
+  static const quiz = "/quiz";
+  static const quizTwo = "/quizTwo";
 }
