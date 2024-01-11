@@ -113,18 +113,32 @@ class LoginForm extends StatelessWidget {
             height: 15,
           ),
           SizedBox(
-            width: Get.width,
-            child: ElevatedButton(
-                onPressed: () async {
-                  if (formField.currentState!.validate()) {
-                    await controller.login();
-                  }
-                },
-                child: Text(
-                  "Login",
-                  style: buttonText,
-                )),
-          )
+              width: Get.width,
+              child: ElevatedButton(
+                onPressed: controller.isLoading.value
+                    ? () {}
+                    : () async {
+                        if (formField.currentState!.validate()) {
+                          await controller.login();
+                        }
+                      },
+                child: GetBuilder<LoginController>(
+                    builder: (_) => controller.isLoading.value
+                        ? const Center(
+                            child: SizedBox(
+                              height: 19,
+                              width: 19,
+                              child: CircularProgressIndicator(
+                                color: Colors.white,
+                                strokeWidth: 2,
+                              ),
+                            ),
+                          )
+                        : Text(
+                            "Login",
+                            style: buttonText,
+                          )),
+              ))
         ],
       ),
     );

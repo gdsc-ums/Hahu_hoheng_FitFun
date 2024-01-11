@@ -1,6 +1,21 @@
 import 'package:get/get.dart';
 
 class InputValidator {
+  static String? nameMessageValidation(String? value, dynamic controller) {
+    if (value!.isEmpty) {
+      controller.isNameInvalid.value = true;
+      controller.update();
+      return "*Nama lengkap tidak boleh kosong";
+    } else if (value.length < 3) {
+      controller.isNameInvalid.value = true;
+      controller.update();
+      return "*Nama lengkap harus diisi setidaknya 3 karakter";
+    }
+    controller.isNameInvalid.value = false;
+    controller.update();
+    return null;
+  }
+
   static String? emailMessageValidation(String? value, dynamic controller) {
     if (value!.isEmpty) {
       controller.isEmailInvalid.value = true;
