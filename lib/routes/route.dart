@@ -1,7 +1,9 @@
 import 'package:get/get.dart';
+import 'package:hahu_hoheng_fitfun/bindings/health_score_binding.dart';
 import 'package:hahu_hoheng_fitfun/bindings/home_binding.dart';
 import 'package:hahu_hoheng_fitfun/bindings/quiz_binding.dart';
 import 'package:hahu_hoheng_fitfun/bindings/login_binding.dart';
+import 'package:hahu_hoheng_fitfun/views/health_score.dart';
 import 'package:hahu_hoheng_fitfun/views/login.dart';
 import 'package:hahu_hoheng_fitfun/bindings/splash_binding.dart';
 import 'package:hahu_hoheng_fitfun/views/signup.dart';
@@ -44,6 +46,12 @@ class AppPage {
     GetPage(
       name: RouteName.quizTwo,
       page: () => const QuizViewTwo(),
+      transition: Transition.rightToLeft
+    ),
+    GetPage(
+      name: RouteName.healthScore,
+      page: () => const HealthScoreView(),
+      binding: HealthScoreBinding(),
       transition: Transition.rightToLeft
     )
   ];
