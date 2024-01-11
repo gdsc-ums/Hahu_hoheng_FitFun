@@ -2,25 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
-import '../../controllers/view/quiz_controller.dart';
+import '../../controllers/quiz_controller.dart';
 import '../../themes/app_font.dart';
 
-class QuizForm extends StatefulWidget {
+class QuizForm extends StatelessWidget {
   const QuizForm({super.key});
-
-  @override
-  State<QuizForm> createState() => _QuizFormState();
-}
-
-class _QuizFormState extends State<QuizForm> {
-  List? isChecked = [];
-  @override
-  void initState() {
-    final controller = Get.find<QuizController>();
-    isChecked =
-        List.generate(controller.quizWithImage.length, (index) => false);
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -54,21 +40,23 @@ class _QuizFormState extends State<QuizForm> {
                         .quizName[entry.key], // Ambil nama dari list quizName
                     style: text14.copyWith(fontWeight: FontWeight.w700),
                   ),
-                  Checkbox(
-                    value: isChecked![entry.key],
-                    tristate: false,
-                    onChanged: (newBool) {
-                      setState(() {
-                        isChecked![entry.key] = newBool;
-                      });
-                      print('Tombol Check Ditekan');
-                    },
-                    activeColor: const Color(0xFF3CB371),
-                    side: const BorderSide(
-                      color: Color(0xFFD3D6DA),
-                      width: 2.0,
-                    ),
-                  ),
+                  GetBuilder<QuizController>(
+                      builder: (_) => Checkbox(
+                            value: controller.isChecked![entry.key],
+                            tristate: false,
+                            onChanged: (newBool) {
+                              controller.isVisible.value
+                                  ? controller.isChecked![entry.key] = false
+                                  : controller.isChecked![entry.key] = newBool;
+                              controller.update();
+                              print('Tombol Check Ditekan');
+                            },
+                            activeColor: const Color(0xFF3CB371),
+                            side: const BorderSide(
+                              color: Color(0xFFD3D6DA),
+                              width: 2.0,
+                            ),
+                          )),
                 ],
               ),
             ),

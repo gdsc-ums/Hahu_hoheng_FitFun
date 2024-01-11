@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import '../../controllers/view/quiz_controller.dart';
+import '../controllers/quiz_controller.dart';
 
 class QuizBinding implements Bindings {
   @override

@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 import 'package:hahu_hoheng_fitfun/bindings/home_binding.dart';
-import 'package:hahu_hoheng_fitfun/bindings/quiz/quiz_binding.dart';
-import 'package:hahu_hoheng_fitfun/bindings/quiz/quiz_two_binding.dart';
+import 'package:hahu_hoheng_fitfun/bindings/quiz_binding.dart';
 import 'package:hahu_hoheng_fitfun/bindings/login_binding.dart';
 import 'package:hahu_hoheng_fitfun/views/login.dart';
 import 'package:hahu_hoheng_fitfun/bindings/splash_binding.dart';
@@ -29,6 +28,7 @@ class AppPage {
       name: RouteName.home,
       page: () => const HomeView(),
       binding: HomeBinding(),
+      transition: Transition.rightToLeft
     ),
     GetPage(
       name: RouteName.splash,
@@ -39,11 +39,12 @@ class AppPage {
       name: RouteName.quiz,
       page: () => const QuizView(),
       binding: QuizBinding(),
+      transition: Transition.rightToLeft
     ),
     GetPage(
       name: RouteName.quizTwo,
       page: () => const QuizViewTwo(),
-      binding: QuizTwoBinding(),
+      transition: Transition.rightToLeft
     )
   ];
 }
