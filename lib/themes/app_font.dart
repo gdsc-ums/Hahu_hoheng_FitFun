@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:hahu_hoheng_fitfun/themes/app_color.dart';
 
-const baseText = TextStyle(color: Colors.black, fontFamily: "Roboto");
+const baseText = TextStyle(color: textBlack, fontFamily: "Roboto");
 final TextStyle buttonText =
     baseText.copyWith(color: Colors.white, fontSize: 16);
 final TextStyle text9 = baseText.copyWith(fontSize: 9);

@@ -51,7 +51,7 @@ class LoginController extends GetxController {
           backgroundColor: const Color.fromARGB(131, 253, 65, 65),
           margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10));
     } else {
-      Get.toNamed(RouteName.home);
+      Get.offAllNamed(RouteName.home);
       email.clear();
       pass.clear();
     }
