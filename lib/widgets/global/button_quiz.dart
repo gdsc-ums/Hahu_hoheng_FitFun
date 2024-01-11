@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:hahu_hoheng_fitfun/routes/route_name.dart';
 
 import '../../themes/app_color.dart';
+import '../../themes/app_font.dart';
 
 class ButtonQuiz extends StatelessWidget {
   const ButtonQuiz({super.key});
@@ -18,19 +19,19 @@ class ButtonQuiz extends StatelessWidget {
             print("Tombol Next Berjalan");
             Get.toNamed(RouteName.quizTwo);
           },
-          child: const Row(
+          child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 "Lanjut",
-                style: TextStyle(color: secondaryColor),
+                style: buttonText,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
-              Icon(
+              const Icon(
                 Icons.arrow_forward_ios_rounded,
-                color: secondaryColor,
+                color: bgAppColor,
               ),
             ],
           ),

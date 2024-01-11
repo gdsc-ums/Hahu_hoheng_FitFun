@@ -58,9 +58,10 @@ class _QuizFormState extends State<QuizForm> {
                     value: isChecked![entry.key],
                     tristate: false,
                     onChanged: (newBool) {
-                      setState(() {
-                        isChecked![entry.key] = newBool;
-                      });
+                      controller.isVisible.value
+                          ? isChecked![entry.key] = false
+                          : isChecked![entry.key] = newBool;
+                      controller.update();
                       print('Tombol Check Ditekan');
                     },
                     activeColor: const Color(0xFF3CB371),
