@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_color.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_font.dart';
 
+import '../../routes/route_name.dart';
 import '../../widgets/global/button_quiz.dart';
 import '../../widgets/quiz/quiz_form.dart';
 
@@ -52,7 +54,11 @@ class _QuizViewState extends State<QuizView> {
               const SizedBox(
                 height: 150,
               ),
-              const ButtonQuiz(),
+              ButtonQuiz(
+                onTap: () {
+                  Get.toNamed(RouteName.quizTwo);
+                },
+              ),
             ],
           ),
         ),

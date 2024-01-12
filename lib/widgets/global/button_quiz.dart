@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hahu_hoheng_fitfun/routes/route_name.dart';
 
 import '../../themes/app_color.dart';
 import '../../themes/app_font.dart';
 
 class ButtonQuiz extends StatelessWidget {
-  const ButtonQuiz({super.key});
+  // final String buttonTextPages;
+  final Function()? onTap;
+  const ButtonQuiz({super.key, this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -15,10 +16,7 @@ class ButtonQuiz extends StatelessWidget {
       child: SizedBox(
         width: Get.width,
         child: ElevatedButton(
-          onPressed: () {
-            print("Tombol Next Berjalan");
-            Get.toNamed(RouteName.quizTwo);
-          },
+          onPressed: onTap,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

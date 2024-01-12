@@ -17,6 +17,7 @@ class QuizController extends GetxController {
   RxBool isVisible = false.obs;
   RxBool isLoading = false.obs;
   List? isChecked = [];
+  String? selectedOption;
 
   final List<String> quizWithImage = [
     'assets/icons/icon_love.svg',
@@ -37,10 +38,19 @@ class QuizController extends GetxController {
     'Perempuan',
   ];
 
+  final List<String> quizEating = [
+    'Tidak teratur',
+    'Seimbang',
+  ];
+
   @override
   void onInit() {
-    isChecked =
-        List.generate(quizWithImage.length, (index) => false);
+    isChecked = List.generate(quizWithImage.length, (index) => false);
     super.onInit();
+  }
+
+  void selectOption(String valueOption) {
+    selectedOption = valueOption;
+    update();
   }
 }

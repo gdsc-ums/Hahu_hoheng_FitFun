@@ -41,22 +41,23 @@ class QuizForm extends StatelessWidget {
                     style: text14.copyWith(fontWeight: FontWeight.w700),
                   ),
                   GetBuilder<QuizController>(
-                      builder: (_) => Checkbox(
-                            value: controller.isChecked![entry.key],
-                            tristate: false,
-                            onChanged: (newBool) {
-                              controller.isVisible.value
-                                  ? controller.isChecked![entry.key] = false
-                                  : controller.isChecked![entry.key] = newBool;
-                              controller.update();
-                              print('Tombol Check Ditekan');
-                            },
-                            activeColor: const Color(0xFF3CB371),
-                            side: const BorderSide(
-                              color: Color(0xFFD3D6DA),
-                              width: 2.0,
-                            ),
-                          )),
+                    builder: (_) => Checkbox(
+                      value: controller.isChecked![entry.key],
+                      tristate: false,
+                      onChanged: (newBool) {
+                        controller.isVisible.value
+                            ? controller.isChecked![entry.key] = false
+                            : controller.isChecked![entry.key] = newBool;
+                        controller.update();
+                        print('Tombol Check Ditekan');
+                      },
+                      activeColor: const Color(0xFF3CB371),
+                      side: const BorderSide(
+                        color: Color(0xFFD3D6DA),
+                        width: 2.0,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
