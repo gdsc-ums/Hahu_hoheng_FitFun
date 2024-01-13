@@ -35,7 +35,7 @@ class HomeExerciseProgram extends StatelessWidget {
               padding: const EdgeInsets.only(top: 20, left: 15),
               decoration: BoxDecoration(
                   color: Colors.white,
-                  border: Border.all(width: 0.5, color: Colors.grey),
+                  border: Border.all(width: 0.5, color: textGrey),
                   borderRadius: BorderRadius.circular(15)),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -66,7 +66,7 @@ class HomeExerciseProgram extends StatelessWidget {
               padding: const EdgeInsets.only(top: 20, left: 20),
               decoration: BoxDecoration(
                   color: Colors.white,
-                  border: Border.all(width: 0.5, color: Colors.grey),
+                  border: Border.all(width: 0.5, color: textGrey),
                   borderRadius: BorderRadius.circular(15)),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
