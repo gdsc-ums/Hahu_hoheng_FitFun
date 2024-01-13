@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 enum Gender {
   male,
   female,
@@ -9,7 +11,7 @@ enum ActivityLevel {
   rarely,
 }
 
-class User {
+class UserModel {
   String name;
   int age;
   Gender gender;
@@ -17,7 +19,7 @@ class User {
   bool eatsRegularly;
   ActivityLevel activityLevel;
 
-  User({
+  UserModel({
     required this.name,
     required this.age,
     required this.gender,
@@ -25,4 +27,9 @@ class User {
     required this.eatsRegularly,
     required this.activityLevel,
   });
+
+  // factory UserModel.fromFirestore(DocumentSnapshot<Map<String, dynamic>> snapshot,
+  //   SnapshotOptions? options){
+  //   return UserModel(name: name, age: age, gender: gender, hasHeartDisease: hasHeartDisease, eatsRegularly: eatsRegularly, activityLevel: activityLevel)
+  // }
 }

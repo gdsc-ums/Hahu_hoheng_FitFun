@@ -35,7 +35,7 @@ class HomePrivateCoach extends StatelessWidget {
           decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(15),
-              border: Border.all(width: 0.6, color: Colors.grey)),
+              border: Border.all(width: 0.6, color: textGrey)),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
