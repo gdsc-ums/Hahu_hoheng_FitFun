@@ -47,9 +47,9 @@ class MyApp extends StatelessWidget {
         title: 'FitFun',
         theme: AppTheme.lightTheme,
         getPages: AppPage.pages,
-        // initialBinding: isLogin ? HomeBinding() : LoginBinding(),
+        initialBinding: isLogin ? HomeBinding() : LoginBinding(),
         home:
-            const SplashView() //isLogin ? const HomeView() : const LoginView(),
+            isLogin ? const HomeView() : const LoginView(),
         );
   }
 }
