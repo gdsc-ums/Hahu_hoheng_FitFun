@@ -21,15 +21,16 @@ We provide a solution, namely a mobile-based system in which machine learning is
 This system is based on a mobile app which was built using Flutter technology with artificial intelligence (machine learning) and also utilizes Firebase as data storage.
 
 ## Hasil Gambar
-Splash Screen | Register Screen | Login Screen | Quiz Screen | Home | 
-:----------:|:----------:| :----------:| :----------:| :----------:| 
-<img src="Demo/Aplikasi/Splash/splash.jpeg"/> | <img src="Demo/Aplikasi/login_signup/signup.jpeg"/> | <img src="Demo/Aplikasi/login_signup/login.jpeg"/> | <img src="Demo/Aplikasi/quiz/quiz1.jpeg"/><img src="Demo/Aplikasi/quiz/quiz2.jpeg"/> <img src="Demo/Aplikasi/quiz/quiz3.jpeg"/> <img src="Demo/Aplikasi/quiz/quiz4.jpeg"/> | <img src="Demo/Aplikasi/home/home.jpeg"/>
+Splash Screen | Register Screen | Login Screen | Quiz Screen | Home | Personalized Result Screen |
+:----------:|:----------:| :----------:| :----------:| :----------:| :----------: |
+<img src="Demo/Aplikasi/Splash/splash.jpeg"/> | <img src="Demo/Aplikasi/login_signup/signup.jpeg"/> | <img src="Demo/Aplikasi/login_signup/login.jpeg"/> | <img src="Demo/Aplikasi/quiz/quiz1.jpeg"/><img src="Demo/Aplikasi/quiz/quiz2.jpeg"/> <img src="Demo/Aplikasi/quiz/quiz3.jpeg"/> <img src="Demo/Aplikasi/quiz/quiz4.jpeg"/> | <img src="Demo/Aplikasi/home/home.jpg"/> | <img src="Demo/Aplikasi/personalizedResult/personalized_result.jpg"/> |
 ## Fitur
 - Splash Screen
 - Register Screen
 - Login Screen
 - Quiz Screen
 - Home Screen
+- Personalized Result Screen
 
 
 ## Teknologi yang digunakan
