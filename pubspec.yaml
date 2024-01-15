@@ -50,11 +50,17 @@ dev_dependencies:
     sdk: flutter
 
 flutter_native_splash:
-  color: "#42a5f5"
-  image: assets/images/logo/logo_produks.png
+  color: "#F8F8F8"
+  image: assets/images/logo/fitfun_logo.png
   android: true
   ios: true
-  web: true
+  web: false
+
+  android_12:
+    image: assets/images/logo/fitfun_logo.png
+    icon_background_color: "#F8F8F8"
+    image_dark: assets/images/logo/fitfun_logo.png
+    icon_background_color_dark: "#F8F8F8"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

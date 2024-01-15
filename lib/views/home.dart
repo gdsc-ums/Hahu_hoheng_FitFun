@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
+import 'package:hahu_hoheng_fitfun/controllers/home_controller.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_font.dart';
 import 'package:hahu_hoheng_fitfun/widgets/global/bottom_navbar.dart';
 import 'package:hahu_hoheng_fitfun/widgets/home/exercise_program.dart';
@@ -11,6 +13,7 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.find<HomeController>();
     return Scaffold(
       body: SafeArea(
         child: Stack(
@@ -37,10 +40,16 @@ class HomeView extends StatelessWidget {
                             const Text("Selamat datang di FitFun"),
                           ],
                         ),
-                        SvgPicture.asset(
-                          "assets/icons/notification.svg",
-                          height: 28,
-                          width: 28,
+                        GestureDetector(
+                          onTap: () async => await controller.logout(),
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 5.0),
+                            child: SvgPicture.asset(
+                              "assets/icons/logout.svg",
+                              height: 28,
+                              width: 28,
+                            ),
+                          ),
                         ),
                       ],
                     ),

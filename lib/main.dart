@@ -37,19 +37,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        debugShowCheckedModeBanner: false,
-        builder: (context, child) {
-          return ScrollConfiguration(
-            behavior: const ScrollBehavior().copyWith(overscroll: false),
-            child: child!,
-          );
-        },
-        title: 'FitFun',
-        theme: AppTheme.lightTheme,
-        getPages: AppPage.pages,
-        initialBinding: isLogin ? HomeBinding() : LoginBinding(),
-        home:
-            isLogin ? const HomeView() : const LoginView(),
+      debugShowCheckedModeBanner: false,
+      builder: (context, child) {
+        return ScrollConfiguration(
+          behavior: const ScrollBehavior().copyWith(overscroll: false),
+          child: child!,
         );
+      },
+      title: 'FitFun',
+      theme: AppTheme.lightTheme,
+      getPages: AppPage.pages,
+      initialBinding: isLogin ? HomeBinding() : LoginBinding(),
+      home: isLogin ? const HomeView() : const LoginView(),
+    );
   }
 }

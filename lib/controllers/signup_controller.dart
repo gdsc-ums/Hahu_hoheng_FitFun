@@ -54,6 +54,7 @@ class SignupController extends GetxController {
       email.clear();
       pass.clear();
     }
+    Get.back();
     isLoading.value = false;
     update();
   }

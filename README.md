@@ -23,7 +23,7 @@ This system is based on a mobile app which was built using Flutter technology wi
 ## Hasil Gambar
 Splash Screen | Register Screen | Login Screen | Quiz Screen | Home | Personalized Result Screen |
 :----------:|:----------:| :----------:| :----------:| :----------:| :----------: |
-<img src="Demo/Aplikasi/Splash/splash.jpeg"/> | <img src="Demo/Aplikasi/login_signup/signup.jpeg"/> | <img src="Demo/Aplikasi/login_signup/login.jpeg"/> | <img src="Demo/Aplikasi/quiz/quiz1.jpeg"/><img src="Demo/Aplikasi/quiz/quiz2.jpeg"/> <img src="Demo/Aplikasi/quiz/quiz3.jpeg"/> <img src="Demo/Aplikasi/quiz/quiz4.jpeg"/> | <img src="Demo/Aplikasi/home/home.jpg"/> | <img src="Demo/Aplikasi/personalizedResult/personalized_result.jpg"/> |
+<img src="demo/app/Splash/splash.jpeg"/> | <img src="demo/app/login_signup/signup.jpeg"/> | <img src="demo/app/login_signup/login.jpeg"/> | <img src="demo/app/quiz/quiz1.jpeg"/><img src="demo/app/quiz/quiz2.jpeg"/> <img src="demo/app/quiz/quiz3.jpeg"/> <img src="demo/app/quiz/quiz4.jpeg"/> | <img src="demo/app/home/home.jpg"/> | <img src="demo/app/personalizedResult/personalized_result.jpg"/> |
 ## Fitur
 - Splash Screen
 - Register Screen
