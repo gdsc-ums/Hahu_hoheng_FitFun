@@ -26,7 +26,7 @@ class _QuizViewState extends State<QuizView> {
                 height: 15,
               ),
               Text(
-                'Langkah 1/7',
+                'Langkah 1/5',
                 style: text12.copyWith(color: secondaryColor),
               ),
               const SizedBox(

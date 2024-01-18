@@ -21,7 +21,7 @@ class QuizViewTwo extends StatelessWidget {
                 height: 15,
               ),
               Text(
-                'Langkah 2/7',
+                'Langkah 2/5',
                 style: text12.copyWith(color: const Color(0xFF3CB371)),
               ),
               const SizedBox(
