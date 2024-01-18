@@ -3,12 +3,20 @@
 </h1>
 
 ## Konten
+- [Install & Run](#Install-&-Run)
 - [Introduction](#pengenalan)
 - [Image Results](#Hasil-Gambar)
 - [Fitur](#Fitur)
 - [Technology](#Teknologi-yang-digunakan)
 - [Dependensi](#Dependensi)
 - [Contacs](#Kontak)
+
+## Install & Run
+
+```
+flutter pub get
+flutter run
+```
 
 ## Pengenalan
 Hallo everyone, From existing problems related to sports and health such as the following:
