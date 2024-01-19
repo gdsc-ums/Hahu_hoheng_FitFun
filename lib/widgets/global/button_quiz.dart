@@ -5,9 +5,9 @@ import '../../themes/app_color.dart';
 import '../../themes/app_font.dart';
 
 class ButtonQuiz extends StatelessWidget {
-  // final String buttonTextPages;
+  final String buttonTextPages;
   final Function()? onTap;
-  const ButtonQuiz({super.key, this.onTap});
+  const ButtonQuiz({super.key, this.onTap, required this.buttonTextPages});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class ButtonQuiz extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Lanjut",
+                buttonTextPages,
                 style: buttonText,
               ),
               const SizedBox(

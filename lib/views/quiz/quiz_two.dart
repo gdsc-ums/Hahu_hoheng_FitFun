@@ -56,6 +56,7 @@ class QuizViewTwo extends StatelessWidget {
                 onTap: () {
                   Get.toNamed(RouteName.quizThree);
                 },
+                buttonTextPages: 'Lanjut',
               ),
             ],
           ),

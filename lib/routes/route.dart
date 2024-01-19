@@ -6,11 +6,14 @@ import 'package:hahu_hoheng_fitfun/bindings/login_binding.dart';
 import 'package:hahu_hoheng_fitfun/views/health_score.dart';
 import 'package:hahu_hoheng_fitfun/views/login.dart';
 import 'package:hahu_hoheng_fitfun/bindings/splash_binding.dart';
-import 'package:hahu_hoheng_fitfun/views/quiz/quiz_four.dart';
 import 'package:hahu_hoheng_fitfun/views/signup.dart';
+
 import '../bindings/signup_binding.dart';
 import '../views/home.dart';
 import '../views/quiz/quiz.dart';
+import '../views/quiz/quiz_five.dart';
+import '../views/quiz/quiz_four.dart';
+import '../views/quiz/quiz_six.dart';
 import '../views/quiz/quiz_three.dart';
 import '../views/quiz/quiz_two.dart';
 import '../views/splash.dart';
@@ -54,6 +57,14 @@ class AppPage {
     GetPage(
         name: RouteName.quizFour,
         page: () => const QuizFourView(),
+        transition: Transition.rightToLeft),
+    GetPage(
+        name: RouteName.quizFive,
+        page: () => const QuizFiveView(),
+        transition: Transition.rightToLeft),
+    GetPage(
+        name: RouteName.quizSix,
+        page: () => const QuizSixView(),
         transition: Transition.rightToLeft),
     GetPage(
         name: RouteName.healthScore,

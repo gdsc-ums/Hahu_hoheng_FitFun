@@ -56,7 +56,8 @@ class QuizFourView extends StatelessWidget {
             height: 260,
           ),
           ButtonQuiz(
-            onTap: () => Get.offAllNamed(RouteName.home),
+            onTap: () => Get.offAllNamed(RouteName.quizFive),
+            buttonTextPages: 'Lanjut',
           ),
           const SizedBox(
             height: 20,

@@ -7,14 +7,9 @@ import '../../routes/route_name.dart';
 import '../../widgets/global/button_quiz.dart';
 import '../../widgets/quiz/quiz_form.dart';
 
-class QuizView extends StatefulWidget {
+class QuizView extends StatelessWidget {
   const QuizView({super.key});
 
-  @override
-  State<QuizView> createState() => _QuizViewState();
-}
-
-class _QuizViewState extends State<QuizView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,6 +53,7 @@ class _QuizViewState extends State<QuizView> {
                 onTap: () {
                   Get.toNamed(RouteName.quizTwo);
                 },
+                buttonTextPages: 'Lanjut',
               ),
             ],
           ),

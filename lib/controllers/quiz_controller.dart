@@ -43,6 +43,12 @@ class QuizController extends GetxController {
     'Seimbang',
   ];
 
+  final List<String> quizFisikActivityWeek = [
+    'Rutin',
+    'Kadang-kadang',
+    'Tidak pernah'
+  ];
+
   @override
   void onInit() {
     isChecked = List.generate(quizWithImage.length, (index) => false);

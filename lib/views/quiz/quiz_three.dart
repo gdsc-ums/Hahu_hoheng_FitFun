@@ -52,9 +52,12 @@ class QuizThreeView extends StatelessWidget {
           const SizedBox(
             height: 300,
           ),
-          ButtonQuiz(onTap: () {
-            Get.toNamed(RouteName.quizFour);
-          }),
+          ButtonQuiz(
+            onTap: () {
+              Get.toNamed(RouteName.quizFour);
+            },
+            buttonTextPages: 'Lanjut',
+          ),
           const SizedBox(
             height: 20,
           ),

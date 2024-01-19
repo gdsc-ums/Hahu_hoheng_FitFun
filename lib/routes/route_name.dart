@@ -7,5 +7,7 @@ abstract class RouteName {
   static const quizTwo = "/quizTwo";
   static const quizThree = "/quizThree";
   static const quizFour = "/quizFour";
+  static const quizFive = "/quizFive";
+  static const quizSix = "/quizSix";
   static const healthScore = "/health-score";
 }
