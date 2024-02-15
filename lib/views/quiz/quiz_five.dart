@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_color.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_font.dart';
 
-import '../../routes/route_name.dart';
 import '../../widgets/global/button_quiz.dart';
 import '../../widgets/quiz/quiz_form_five.dart';
 
@@ -52,9 +51,7 @@ class QuizFiveView extends StatelessWidget {
               height: 150,
             ),
             ButtonQuiz(
-              onTap: () {
-                Get.toNamed(RouteName.quizSix);
-              },
+              onTap: () {},
               buttonTextPages: 'Lanjut',
             ),
           ],

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:hahu_hoheng_fitfun/controllers/login_controller.dart';
-import 'package:hahu_hoheng_fitfun/routes/route_name.dart';
+import 'package:hahu_hoheng_fitfun/bloc/login_controller.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_font.dart';
 
 import '../../themes/app_color.dart';
@@ -20,16 +19,16 @@ class LoginBottomSection extends StatelessWidget {
               style: text14.copyWith(color: const Color(0xFF717784)),
               children: [
                 const TextSpan(
-                  text: "Belum punya akun?",
+                  text: "Belum punya akun?"
                 ),
                 const WidgetSpan(
                     child: SizedBox(
-                  width: 5,
-                )),
+                  width: 5
+                ),),
                 WidgetSpan(
                     alignment: PlaceholderAlignment.middle,
                     child: GestureDetector(
-                      onTap: () => Get.toNamed(RouteName.signup),
+                      onTap: () {},
                       child: const Text(
                         "Daftar",
                         style: TextStyle(color: secondaryColor),

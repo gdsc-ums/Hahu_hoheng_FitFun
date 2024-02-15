@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_color.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_font.dart';
 
-import '../../routes/route_name.dart';
 import '../../widgets/global/button_quiz.dart';
 import '../../widgets/quiz/quiz_six_contain.dart';
 import '../../widgets/quiz/quiz_six_header.dart';
@@ -38,7 +37,7 @@ class QuizSixView extends StatelessWidget {
                 height: 100,
               ),
               ButtonQuiz(
-                onTap: () => Get.offAllNamed(RouteName.home),
+                onTap: () {},
                 buttonTextPages: 'Mulai',
               ),
               const SizedBox(

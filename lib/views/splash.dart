@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:get/get.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_font.dart';
 
-import '../routes/route_name.dart';
+// import '../routes/route_name.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -16,7 +15,6 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     Future.delayed(const Duration(seconds: 5), () {
-      Get.toNamed(RouteName.quiz);
     });
     super.initState();
   }

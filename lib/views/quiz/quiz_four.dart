@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hahu_hoheng_fitfun/routes/route_name.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_color.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_font.dart';
 import 'package:hahu_hoheng_fitfun/widgets/global/button_quiz.dart';
@@ -56,7 +55,7 @@ class QuizFourView extends StatelessWidget {
             height: 260,
           ),
           ButtonQuiz(
-            onTap: () => Get.offAllNamed(RouteName.quizFive),
+            onTap: () {},
             buttonTextPages: 'Lanjut',
           ),
           const SizedBox(

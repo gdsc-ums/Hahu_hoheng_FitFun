@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../controllers/quiz_controller.dart';
+import '../../bloc/quiz_controller.dart';
 import '../../themes/app_font.dart';
 
 class QuizFormFour extends StatelessWidget {

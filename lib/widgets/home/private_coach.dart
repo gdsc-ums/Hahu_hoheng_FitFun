@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import '../../themes/app_color.dart';
 import '../../themes/app_font.dart';
@@ -15,21 +14,13 @@ class HomePrivateCoach extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              "Pelatih Pribadi",
-              style: text20,
-            ),
-            Text(
-              "Lebih banyak",
-              style: text14.copyWith(color: secondaryColor),
-            )
+            Text("Pelatih Pribadi", style: text20),
+            Text("Lebih banyak", style: text14.copyWith(color: secondaryColor))
           ],
         ),
-        const SizedBox(
-          height: 15,
-        ),
+        const SizedBox(height: 15),
         Container(
-          width: Get.width,
+          width: MediaQuery.sizeOf(context).width,
           height: 130,
           padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
@@ -41,36 +32,28 @@ class HomePrivateCoach extends StatelessWidget {
             children: [
               ClipRRect(
                 borderRadius: BorderRadius.circular(10),
-                child: Image.asset(
-                  "assets/images/private_coach.jpg",
-                  width: 100,
-                  height: Get.height,
-                  fit: BoxFit.cover,
-                ),
+                child: Image.asset("assets/images/private_coach.jpg",
+                    width: 100,
+                    height: MediaQuery.sizeOf(context).height,
+                    fit: BoxFit.cover),
               ),
-              const SizedBox(
-                width: 20,
-              ),
+              const SizedBox(width: 20),
               Expanded(
-                  child: Padding(
-                padding: const EdgeInsets.only(right: 20.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Dapatkan Pelatih Pribadi!",
-                      style: text18.copyWith(fontWeight: FontWeight.w500),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    const Expanded(
-                        child: Text(
-                      "Cooming soon",
-                    )),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 20.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Dapatkan Pelatih Pribadi!",
+                          style: text18.copyWith(fontWeight: FontWeight.w500)),
+                      const SizedBox(height: 10),
+                      const Expanded(
+                        child: Text("Cooming soon"),
+                      ),
+                    ],
+                  ),
                 ),
-              ))
+              )
             ],
           ),
         ),
