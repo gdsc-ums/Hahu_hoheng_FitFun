@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_color.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_font.dart';
 
@@ -16,42 +15,23 @@ class QuizView extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              const SizedBox(
-                height: 15,
-              ),
-              Text(
-                'Langkah 1/5',
-                style: text12.copyWith(color: secondaryColor),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              Text(
-                'Beri tahu kami bagaimana kami dapat membantu Anda',
-                style: text16.copyWith(
-                    color: const Color(0xFF363636),
-                    fontWeight: FontWeight.w700),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              Text(
-                'Anda dapat mengganti ini nanti',
-                style: text11.copyWith(
-                    color: textGrey, fontWeight: FontWeight.w500),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
+              const SizedBox(height: 15),
+              Text('Langkah 1/5',
+                  style: text12.copyWith(color: secondaryColor)),
+              const SizedBox(height: 20),
+              Text('Beri tahu kami bagaimana kami dapat membantu Anda',
+                  style: text16.copyWith(
+                      color: const Color(0xFF363636),
+                      fontWeight: FontWeight.w700),
+                  textAlign: TextAlign.center),
+              const SizedBox(height: 20),
+              Text('Anda dapat mengganti ini nanti',
+                  style: text11.copyWith(
+                      color: textGrey, fontWeight: FontWeight.w500)),
+              const SizedBox(height: 20),
               const QuizForm(),
-              const SizedBox(
-                height: 150,
-              ),
-              ButtonQuiz(
-                onTap: () {},
-                buttonTextPages: 'Lanjut',
-              ),
+              const SizedBox(height: 150),
+              ButtonQuiz(onTap: () {}, buttonTextPages: 'Lanjut'),
             ],
           ),
         ),

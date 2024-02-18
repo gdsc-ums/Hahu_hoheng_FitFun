@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:hahu_hoheng_fitfun/firebase_options.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_theme.dart';
 import 'package:hahu_hoheng_fitfun/views/home.dart';
-import 'package:hahu_hoheng_fitfun/views/quiz/quiz.dart';
+// import 'package:hahu_hoheng_fitfun/views/quiz/quiz.dart';
 
 late bool isLogin;
 Future<void> main() async {
