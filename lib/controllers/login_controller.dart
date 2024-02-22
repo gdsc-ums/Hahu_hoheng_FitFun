@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-// import 'package:hahu_hoheng_fitfun/routes/route_name.dart';
+import 'package:hahu_hoheng_fitfun/routes/route_name.dart';
 import 'package:hahu_hoheng_fitfun/services/auth_service.dart';
 
 class LoginController extends GetxController {
@@ -51,7 +51,7 @@ class LoginController extends GetxController {
           backgroundColor: const Color.fromARGB(131, 253, 65, 65),
           margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10));
     } else {
-      // Get.offAllNamed(RouteName.quiz);
+      Get.offAllNamed(RouteName.quiz);
       email.clear();
       pass.clear();
     }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:hahu_hoheng_fitfun/bloc/login_controller.dart';
+import 'package:hahu_hoheng_fitfun/controllers/login_controller.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_color.dart';
 import 'package:hahu_hoheng_fitfun/themes/app_font.dart';
 import 'package:hahu_hoheng_fitfun/utils/input_validator.dart';

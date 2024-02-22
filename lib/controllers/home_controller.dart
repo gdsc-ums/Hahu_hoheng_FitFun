@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
+import 'package:hahu_hoheng_fitfun/routes/route_name.dart';
 
 class HomeController extends GetxController {
   List<Map<String, dynamic>> tabs = [
@@ -10,6 +11,7 @@ class HomeController extends GetxController {
   ];
 
   Future<void> logout() async {
+    Get.offNamed(RouteName.login);
     await FirebaseAuth.instance.signOut();
   }
 }
